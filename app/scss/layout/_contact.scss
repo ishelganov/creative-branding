@@ -1,0 +1,82 @@
+
+// Блок contact
+.contact {
+  padding-top: 153px;
+  padding-bottom: 83px;
+
+  .columns {
+    @include clearfix;
+  }
+
+  h2 {
+    @include underline();
+    text-align: center;
+
+    &:after {
+      top: 72px;
+    }
+  }
+}
+
+// Форма ввода данных
+.form {
+  margin-top: 134px;
+  margin-left: 19px;
+}
+
+// Обратная связь с владельцем
+.feedback {
+  margin-top: 131px;
+  margin-left: 4px;
+}
+
+// Убираем курсив текста
+.feedback__address {
+  font-style: normal;
+}
+
+//=== Отступы
+.feedback__text,
+.feedback__name {
+  margin-bottom: 26px;
+}
+
+.feedback__mail {
+  margin-bottom: 24px;
+}
+
+.feedback__name,
+.feedback__mail {
+  font-weight: 700;
+}
+
+// Ссылки на автора
+.feedback__link {
+  display: inline-block;
+  margin-right: 14px;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+// ссылка на google
+.feedback__link--google {
+  @include sprite($logo-google);
+}
+
+// ссылка на facebook
+.feedback__link--facebook {
+  @include sprite($logo-facebook);
+}
+
+// ссылка на behance
+.feedback__link--behance {
+  @include sprite($logo-behance);
+}
+
+// ссылка на dribbble
+.feedback__link--dribbble {
+  @include sprite($logo-dribbble);
+}

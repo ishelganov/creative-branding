@@ -1,0 +1,62 @@
+form {
+  width: 382px;
+
+  label {
+    letter-spacing: 0.84px;
+  }
+
+}
+
+// лейбл имя
+.form__label-name {
+  float: left;
+}
+
+// лейбл почта
+.form__label-mail {
+  float: right;
+}
+
+.form__input,
+.form__message {
+  margin-top: 14px !important;
+  border-top: 1px solid !important;
+}
+// поле ввода имени и почты
+.form__input {
+  width: 161px !important;
+  height: 36px;
+}
+
+// лейбл сообщение
+.form__label-message {
+  margin-top: 55px;
+}
+
+// поле ввода сообщения
+.form__message {
+  width: 100%;
+  height: 119px;
+  resize: none;
+}
+
+// Кнопка отправки
+.form__send {
+  float: right;
+  padding: 0;
+  margin-top: 24px;
+  font-weight: 700;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  letter-spacing: $letter-spacing-base;
+  transition: 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $color-hover;
+  }
+}

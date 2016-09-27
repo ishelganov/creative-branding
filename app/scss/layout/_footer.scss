@@ -1,0 +1,55 @@
+
+// Блок footer
+.footer {
+  padding-top: 49px;
+  padding-bottom: 57px;
+  background-color: $bg-color-footer;
+
+  .logotype {
+    width: 59px;
+    height: 58px;
+  }
+}
+
+// Обертка для меню footer
+.wrapper-footer {
+  margin-top: 35px;
+  text-align: center;
+}
+
+// Список footer
+.footer-menu__list {
+  @include clearfix;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+// Пункт меню
+.footer-menu____item {
+  float: left;
+  margin: 0 9px;
+}
+
+.footer-menu__link,
+.copyright {
+  color: #a4a4a4;
+}
+
+.footer-menu__link {
+  font: {
+    family: 'source_sans_pro', sans-serif;
+    weight: 400;
+  }
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 14px;
+  font: {
+    family: 'source_sans_pro', sans-serif;
+    weight: 300;
+  }
+}
+

@@ -1,0 +1,26 @@
+
+* {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: 300;
+  line-height: $line-height-base;
+
+  .columns {
+    @include clearfix;
+  }
+}
+
+h1, h2{
+  position: relative;
+  font-size: $font-size-title;
+  letter-spacing: $letter-spacing-title;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: $font-size-secondary;
+  font-weight: 400;
+}

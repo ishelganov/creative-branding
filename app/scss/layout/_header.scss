@@ -1,0 +1,87 @@
+
+// Блок меню
+.navbar {
+  padding: 15px 0;
+  border-bottom: 1px solid #f2f2f2;
+  z-index: 1;
+}
+
+.navbar__brand,
+.main-menu__link {
+  color: #3c3c3c;
+}
+
+// Левая надпись в блоке меню
+.navbar__brand {
+  margin-left: 23px;
+  font: {
+    family: 'source_sans_pro', sans-serif;
+    size: $font-size-secondary;
+    weight: 700;
+  }
+}
+
+// Анимация текста на шапке
+//navbar__brand--rotate180 {
+//  transform: rotateY(180deg);
+//}
+//
+//.navbar__brand--rotate360 {
+//  transition: all 1s ease;
+//  transform: rotateY(360deg);
+//}
+
+// Навигация в меню
+.main-menu__list {
+  @include clearfix;
+  padding: 0;
+  margin: 0 0 0 65px;
+  line-height: 40px;
+  list-style-type: none;
+}
+
+// Отдельный пункт в меню
+.main-menu__item {
+  float: left;
+  margin-right: 37px;
+
+  &--4 {
+    margin-right: 0;
+  }
+}
+
+.main-menu__link {
+  font: {
+    size: 15px;
+    weight: 400;
+  }
+  transition: color 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-hover;
+    font-weight: 700;
+    margin-left: -0.25px;
+  }
+
+}
+
+// Анимамация дял шапки
+.navbar--fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  background: linear-gradient(to top, #f9f9f9, #efeaea);
+  border-bottom-color: #ededed;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 2s;
+}

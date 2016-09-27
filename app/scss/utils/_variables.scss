@@ -1,0 +1,34 @@
+
+//=======================================   ШРИФТЫ
+$font-family-base: 'lato', sans-serif !default;
+
+//=======================================   РАЗМЕРЫ
+// Основной размер
+$font-size-base: 14px;
+// Размер заголовков
+$font-size-title: 34px;
+// Второстепенный размер (h3, brand navbar)
+$font-size-secondary: 26px;
+
+//=======================================   МЕЖБУКВЕННЫЙ ИНТЕРВАЛ
+// основной текст
+$letter-spacing-base: ($font-size-base * 60) / 1000;
+// средние заголовки
+$letter-spacing-secondary: ($font-size-secondary * 160) / 1000;
+// большие заголовки
+$letter-spacing-title: ($font-size-title * 160) / 1000;
+
+//=======================================   МЕЖСТРОЧНЫЙ ИНТЕРВАЛ
+$line-height-base: 26px;
+
+//=======================================   ЦВЕТА
+// Фон блока promo
+$bg-color-promo: #797979;
+// Фон блока portfolio
+$bg-color-portfolio: #f3f3f3;
+// Фон блока partners
+$bg-color-partners: #444444;
+// Фон блока footer
+$bg-color-footer: #3c3c3c;
+// Цвет при наведении
+$color-hover: #ada074;

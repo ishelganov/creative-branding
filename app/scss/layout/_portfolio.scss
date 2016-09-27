@@ -1,0 +1,63 @@
+
+// Блок portfolio
+.portfolio {
+  padding-top: 159px;
+  padding-bottom: 78px;
+  background-color: $bg-color-portfolio;
+
+  h2 {
+    @include underline();
+
+    &:after {
+      top: 66px;
+    }
+  }
+  
+  .columns {
+    text-align: center;
+  }
+
+}
+// Кнопка read more
+.custom-button--black {
+  margin-right: 5px;
+  color: #000000;
+  border-color: #000;
+}
+
+// Обертка для кирпичной галереи
+.wrapper-portfolio {
+  @include clearfix;
+  margin: 0 auto;
+  margin-top: 95px;
+  margin-bottom: 162px;
+}
+
+// 1 картинка
+.portfolio__item {
+  display: block;
+  width: 285px;
+  background: linear-gradient(to top, #ececec, #f3f3f3);
+  margin-top: 22px;
+
+  &--1,
+  &--2,
+  &--3,
+  &--5,
+  &--7,
+  &--8,
+  &--9,
+  &--10 {
+    height: 193px;
+  }
+
+  &--4 {
+    height: 275px;
+  }
+
+  &--6,
+  &--11 {
+    height: 346px;
+  }
+}
+

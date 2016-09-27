@@ -1,0 +1,81 @@
+
+// Блок promo
+.promo {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 133px;
+  color: #fff;
+  background-color: $bg-color-promo;
+
+  .logotype {
+    width: 123px;
+    height: 123px;
+  }
+
+  // Главный заголовок
+  h1 {
+    @include underline(105, 2, #fff);
+    &:after {
+      top: 78px;
+    }
+    margin-top: 139px;
+    margin-right: 3px;
+    font-weight: 400;
+  }
+
+  // Контент по центру
+  .columns {
+    text-align: center;
+  }
+
+  // Кнопка "read more"
+  .button {
+    margin-top: 156px;
+    margin-bottom: 75px;
+    margin-right: 1px;
+  }
+}
+
+// Логотип по центру
+.logotype {
+  margin: 0 auto;
+}
+
+// Текст
+.promo__text {
+  margin-top: 104px;
+  letter-spacing: $letter-spacing-base;
+}
+
+// Область стрелки
+.arrow-down__link {
+  display: block;
+  width: 50px;
+  height: 30px;
+  margin: 0 auto;
+  
+  &:hover {
+    .arrow-down-picture {
+      opacity: 1;
+    }
+  }
+}
+
+// Картинка стрелка
+.arrow-down-picture {
+  @include sprite($arrow-down);
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  animation: arrow-move 1.5s infinite;
+  opacity: 0.5;
+}
+
+@keyframes arrow-move {
+  50% {
+    transform: translate(0,30px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}

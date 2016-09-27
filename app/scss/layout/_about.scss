@@ -1,0 +1,87 @@
+
+.about {
+
+  padding-top: 104px;
+  padding-bottom: 134px;
+
+  h2 {
+    @include underline();
+
+    &:after {
+      top: 60px;
+    }
+  }
+
+  .columns {
+    text-align: center;
+  }
+}
+
+.about__items {
+  padding: 0 29px;
+}
+
+.about__description,
+.about__item-text {
+  color: #a4a4a4;
+}
+
+// Текст под заголовком
+.about__description {
+  display: block;
+  margin-top: 65px;
+}
+
+//===================================   БЛОКИ с картинкой, заголовком и текстом
+
+// Блок
+.about__item {
+  margin-top: 72px;
+}
+
+// Круг у блока
+.about__item-circle {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  margin: 0 auto;
+  border: 2px solid #f0f0f0;
+  border-radius: 50%;
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+// Иконка монитор
+.about__item-circle--monitor:before {
+  @include sprite($monitor);
+}
+
+// Иконка гайка
+.about__item-circle--cog:before {
+  @include sprite($cog);
+}
+
+// Иконка загрузки
+.about__item-circle--inbox:before {
+  @include sprite($inbox);
+}
+
+// Заголовок блока
+.about__item-title {
+  margin-top: 53px;
+  margin-bottom: 19px;
+  letter-spacing: $letter-spacing-secondary;
+}
+
+.about__item-text {
+  margin-top: 25px;
+}

@@ -1,0 +1,21 @@
+
+@mixin clearfix {
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+@mixin underline($width: 81, $height: 1, $background-color: #000) {
+  &:after {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: $width+px;
+    height: $height+px;
+    margin-left: -($width/2)+px;
+    content: '';
+    background-color: $background-color;
+  }
+}
